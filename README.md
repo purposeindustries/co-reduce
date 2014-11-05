@@ -1,6 +1,6 @@
-# co-reduce
+# co-reduce [![Build Status](https://travis-ci.org/purposeindustries/co-reduce.svg)](https://travis-ci.org/purposeindustries/co-reduce)
 
-Reduce an array, using generators
+Reduce an array (or object), using generators.
 
 ## Install
 
@@ -12,8 +12,16 @@ $ npm install co-reduce
 
 ## Usage
 
-### `recude(array, fn, init)`
+### `reduce(array, fn, init)`
 
+```js
+co(function* () {
+  var sum = reduce([1, 2, 3, 4], function* (s, n) {
+    return yield* asyncAdd(s, n);
+  }, 0);
+  console.log(sum);
+});
+```
 
 ## License
 
