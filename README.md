@@ -16,7 +16,7 @@ $ npm install co-reduce
 
 ```js
 co(function* () {
-  var sum = reduce([1, 2, 3, 4], function* (s, n) {
+  var sum = yield* reduce([1, 2, 3, 4], function* (s, n) {
     return yield* asyncAdd(s, n);
   }, 0);
   console.log(sum);
