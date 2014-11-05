@@ -1,0 +1,30 @@
+{
+  "name": "co-reduce",
+  "version": "1.0.0",
+  "description": "Reduce an array using generator functions",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --harmony --reporter spec --require should test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/purposeindustries/co-reduce"
+  },
+  "keywords": [
+    "array",
+    "co",
+    "reduce",
+    "generator"
+  ],
+  "author": "Bence Dányi <bence@danyi.me>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/purposeindustries/co-reduce/issues"
+  },
+  "homepage": "https://github.com/purposeindustries/co-reduce",
+  "devDependencies": {
+    "co": "^3.1.0",
+    "mocha": "^2.0.1",
+    "should": "^4.1.0"
+  }
+}
