@@ -1,6 +1,6 @@
 {
   "name": "co-reduce",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Reduce an array using generator functions",
   "main": "index.js",
   "scripts": {
